@@ -1,0 +1,329 @@
+/* globales */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* landing ---------------------------------------------------------*/
+
+.landingBanner {
+    width: 100%;
+    height: 94vh;
+    background-color: #770cf1;
+    background-image: url('../img/Concept24.jpg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #fcebfa;
+}
+
+.landingBanner .col_1 {
+    width: 45%;
+}
+
+.landingBanner h1, .landingBanner h2 {
+    text-align: right;
+}
+
+.landingBanner h1 {
+    font-family:'Bebas Neue', cursive;;
+    font-size: 20vh;
+    line-height: 100%;
+}
+
+.landingBanner h2 {
+    font-size: 30px;
+}
+
+.landingBanner .col_2 {
+    width: 55%;
+    height: 95vh;
+}
+
+.landingBanner .col_2 img {
+    height: 100%;
+    opacity: 0.8;
+}
+
+/* header ----------------------------------------------------- */
+
+header {
+    width: 100%;
+    height: 6vh;
+    min-height: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+
+.headerWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.navWrapper {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navWrapper .logo {
+    width: 30%;
+    max-width: 230px;
+    min-width: 150px;
+}
+
+.navWrapper .logo img {
+    width: 100%
+}
+
+/* header -> nav -----------------------------------------------------*/
+
+.navWrapper nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navWrapper nav ul li {
+    padding: 10px;
+}
+
+/* main ------------------------------------------------------------ */
+
+/* main -> banners ----------------------------------------------------- */
+
+.mainBanner {
+    width: 100%;
+    min-height: 94vh;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+
+/* mainBanner explorá tyria --------------------------------------- */
+
+.bg1 {
+    background-image: url('../img/Concept07.jpg');
+    background-attachment: fixed;
+    background-color: #750065ee;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+/* mainBanner explorá tyria || col 1 --------------------------------- */
+
+.bg1 .col_1,
+.bg1 .col_2 {
+    width: 100%;
+    text-align: center;
+}
+
+.bg1 .col_1 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg1 .col_1 h2 {
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+
+.bg1 .col_1 h4 {
+    font-size: 30px;
+}
+
+/* mainBanner explorá tyria || col 2 --------------------------------- */
+
+.bg1 .col_2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+/* --> cards ---------------------------------------------------------*/
+
+.card {
+    width: 250px;
+    height: 350px;
+    border: 10px solid rgb(73, 38, 70);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background: #38005271;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.card h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.938);
+}
+
+.card p {
+    padding: 10px;
+    background-color: #350135b2;
+    visibility: hidden;
+}
+
+.card:hover {
+    background-blend-mode: normal;
+    border-color: #4d0042;
+}
+
+.card:hover p {
+    visibility: visible;
+}
+
+.card_1 {
+    background-image: url('../img/caithe.jpg');
+}
+
+.card_2 {
+    background-image: url('../img/caithe.jpg');
+}
+
+.card_3 {
+    background-image: url('../img/caithe.jpg');
+}
+
+.card_4 {
+    background-image: url('../img/caithe.jpg');
+}
+
+.card_5 {
+    background-image: url('../img/caithe.jpg');
+}
+
+/* ------------------------------------------------------------- */
+.bg2 {
+    background-image: url('../img/ascalon-wall-ruins.jpg');
+    background-attachment: fixed;
+    background-color: #380052;
+    background-blend-mode: multiply;
+}
+
+.mainContent {
+    width: 70%;
+    min-height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px 0;
+}
+
+.mainContent article {
+    width: 50%;
+    padding: 20px;
+}
+
+.mainContent aside {
+    width: 50%;
+}
+
+.mainContent h1 {
+    font-size: 60px;
+    padding: 10px 0 5px;
+}
+
+.mainContent h2 {
+    font-size: 30px;
+    padding: 0 0 10px 0;
+}
+
+.mainContent p {
+    font-size: 18px;
+    text-indent: 10px;
+}
+
+/* imagenes -------------------------------------------------- */
+
+.showroom {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.imgContainer {
+    font-size: 0;
+    width: 45%;
+    height: 20vh;
+    min-width: 200px;
+    min-height: 150px;
+    padding-bottom: -5px;
+    border-radius: 10px;
+    border: 1px solid #4d0042;
+    background-size: cover;
+}
+
+.imgContainer img {
+    width: 100%;
+}
+
+.imgContainer:hover {
+    background-color: #9c018746;
+    background-blend-mode: multiply;
+}
+
+
+.img1 {
+    background-image: url('../img/a-norn-necro.jpg');
+}
+
+.img2 {
+    background-image: url('../img/ashford-at-night.jpg');
+}
+
+.img3 {
+    background-image: url('../img/asuras-best-friend.jpg');
+}
+
+.img4 {
+    background-image: url('../img/caithe.jpg');
+}

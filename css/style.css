@@ -53,13 +53,13 @@ body {
 .landingBanner h1, .landingBanner h2 {
     text-align: right;
     align-self: flex-end;
-    width: 400px;
 }
 
 .landingBanner h1 {
-    font-family:'Bebas Neue', cursive;;
+    font-family:'Bebas Neue', cursive;
     font-size: 20vh;
     line-height: 100%;
+    width: 450px;
 }
 
 .landingBanner h2 {

@@ -14,13 +14,20 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-
 a {
     text-decoration: none;
+    color: #15001f; 
 }
 
 h1, h2, h3 {
     font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background-color: #15001fbe;
+    background-image: url('../img/Concept07.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 
 /* landing ---------------------------------------------------------*/
@@ -45,6 +52,8 @@ h1, h2, h3 {
 
 .landingBanner h1, .landingBanner h2 {
     text-align: right;
+    align-self: flex-end;
+    width: 350px;
 }
 
 .landingBanner h1 {
@@ -111,14 +120,24 @@ header {
 /* header -> nav -----------------------------------------------------*/
 
 .navWrapper nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
 }
 
 .navWrapper nav ul li {
-    padding: 10px;
+    display: block;
+    padding: 0 10px;
+}
+
+.navWrapper nav ul li:active {
+    color: #8706f0;
+}
+
+.navWrapper nav ul li:hover {
+    color: #8001a7;
 }
 
 /* main ------------------------------------------------------------ */
@@ -156,19 +175,19 @@ header {
     text-align: center;
 }
 
-.bg1 .col_1 {
+.col_1 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 
-.bg1 .col_1 h2 {
+.mainBanner h2 {
     font-size: 100px;
     letter-spacing: 10px;
 }
 
-.bg1 .col_1 h4 {
+.mainBanner h4 {
     font-size: 30px;
 }
 
@@ -240,19 +259,14 @@ header {
 }
 
 /* ------------------------------------------------------------- */
-.bg2 {
-    background-image: url('../img/ascalon-wall-ruins.jpg');
-    background-attachment: fixed;
-    background-color: #380052;
-    background-blend-mode: multiply;
-}
 
 .mainContent {
-    width: 70%;
+    width: 100%;
     min-height: 50vh;
     margin: 0 auto;
     display: flex;
-    padding: 30px 0;
+    padding: 30px 15%;
+    background-color: whitesmoke;
 }
 
 .mainContent article {
@@ -279,15 +293,15 @@ header {
     text-indent: 10px;
 }
 
-/* imagenes -------------------------------------------------- */
+/* SHOWROOM MAINMUNDO--------------------------------------- */
 
 .showroom {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-content: center;
     gap: 20px;
-    
 }
 
 .imgContainer {
@@ -326,4 +340,79 @@ header {
 
 .img4 {
     background-image: url('../img/caithe.jpg');
+}
+
+/* SECCION REVIEWS --------------------------------------- */
+
+.bg2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../img/ascalon-wall-ruins.jpg');
+    background-attachment: fixed;
+    background-color: #380052;
+    background-blend-mode: multiply;
+}
+
+.bg2 .col_1 {
+    width: 100%;
+    height: 46vh;
+    text-align: center;
+}
+
+.bg2 .col_2 {
+    width: 100%;
+    min-height: 46vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* REV Y REV_Nº ---------------------------------------------------- */
+
+.bg2 .col_2 .rev {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 205px;
+    height: 205px;
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bg2 .col_2 .rev .img_cont {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg2 .col_2 .rev .img_cont:hover {
+    -webkit-box-shadow: inset 0px 0px 15px 5px #57004bcb; 
+    box-shadow: inset 0px 0px 15px 5px #57004bcb;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.number {
+    font-size: 30px;
+}
+
+/* FOOTER ------------------------------------------- */
+footer {
+    height: 30vh;
+    background-color: #15001f;
 }

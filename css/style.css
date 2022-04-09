@@ -40,7 +40,6 @@ body {
     background-blend-mode: multiply;
     background-size: cover;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     color: #fcebfa;
@@ -48,32 +47,38 @@ body {
 
 .landingBanner .col_1 {
     width: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .landingBanner h1, .landingBanner h2 {
     text-align: right;
-    align-self: flex-end;
+    min-width: 400px;
 }
 
 .landingBanner h1 {
-    font-family:'Bebas Neue', cursive;
-    font-size: 20vh;
+    font-size: 10rem;
     line-height: 100%;
-    width: 450px;
 }
 
 .landingBanner h2 {
     font-size: 30px;
+
 }
 
 .landingBanner .col_2 {
     width: 55%;
-    height: 95vh;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .landingBanner .col_2 img {
-    height: 100%;
     opacity: 0.8;
+    width: 100%;
+    align-self: center;
+    min-width: 400px;
+    max-width: 600px;
 }
 
 /* header ----------------------------------------------------- */
@@ -206,11 +211,11 @@ header {
 .card {
     width: 250px;
     height: 350px;
-    border: 10px solid rgb(73, 38, 70);
+    border: 10px solid #492646;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    background: #38005271;
+    background: #5e0056b5;
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -220,7 +225,7 @@ header {
     font-size: 20px;
     text-transform: uppercase;
     padding: 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.938);
+    text-shadow: 1px 1px 10px #000000;
 }
 
 .card p {
@@ -239,7 +244,7 @@ header {
 }
 
 .card_1 {
-    background-image: url('../img/caithe.jpg');
+    background-image: url('../img/Concept07.jpg');
 }
 
 .card_2 {
@@ -247,15 +252,17 @@ header {
 }
 
 .card_3 {
-    background-image: url('../img/caithe.jpg');
+    background-image: url('../img/LegendaryMed.jpg');
+    background-position-x: 450px;
 }
 
 .card_4 {
-    background-image: url('../img/caithe.jpg');
+    background-image: url('../img/LegendaryLight.jpg');
+    background-position-x: 350px;
 }
 
 .card_5 {
-    background-image: url('../img/caithe.jpg');
+    background-image: url('../img/boss_1.jpg');
 }
 
 /* ------------------------------------------------------------- */
@@ -493,7 +500,7 @@ footer {
 /* PAGINAS EXTRA GENERALES ----------------------------------------- */
 
 .mainPages .mainWrapper {
-    width: 60%;
+    width: 80%;
     min-height: 61vh;
     margin: 50px auto;
     background-color: white;
@@ -584,4 +591,44 @@ footer {
 .razasCharr .col_1 {
     overflow: hidden;
     justify-content: end;
+}
+
+/* PAGINAS: CLASES ------------------------------------ */
+
+
+.profWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#profLarge {
+    width: 100%;
+}
+
+.prof {
+    width: 40%;
+    min-width: 400px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.prof .col_1 {
+    width: 40%;
+}
+
+.prof .col_2 {
+    width: 60%;
+    padding: 5px;
+}
+
+.prof .col_2 h4 {
+    padding-bottom: 10px;
+}
+
+
+.prof .col_1 img {
+    width: 100%;
 }

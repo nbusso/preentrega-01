@@ -444,6 +444,7 @@ footer {
 .footerNav {
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
 .footerNav ul li {
@@ -470,6 +471,7 @@ footer {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    flex: 2;
 }
 
 .footerSocialsIcon {
@@ -491,10 +493,11 @@ footer {
     display: flex;
     justify-content: end;
     align-items: center;
+    flex: 1;
 }
 
 .footerAnetLogoWrap {
-    width: 250px;
+    width: min-content;
 }
 
 /* PAGINAS EXTRA GENERALES ----------------------------------------- */

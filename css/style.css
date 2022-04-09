@@ -175,7 +175,7 @@ header {
     text-align: center;
 }
 
-.col_1 {
+.mainBanner .col_1 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -413,6 +413,175 @@ header {
 
 /* FOOTER ------------------------------------------- */
 footer {
-    height: 30vh;
-    background-color: #15001f;
+    background-color: #ffffff;
+}
+
+.footerWrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.footerNav,
+.footerSocials,
+.footerAnet {
+    width: 33.33%;
+    min-height: 18vh;
+}
+
+
+/* FOOTER NAV ---------- */
+.footerNav {
+    display: flex;
+    align-items: center;
+}
+
+.footerNav ul li {
+    font-size: 1.3rem;
+    list-style-type: none;
+}
+
+.footerNav ul li:hover {
+    font-size: 1.4rem;
+    color: #c201a5;
+}
+
+.footerNav ul li a {
+    color: inherit;
+}
+
+
+/* FOOTER SOCIALS ----------- */
+.footerSocials {
+    border-left: 1px dotted #0000005c;
+    border-right: 1px dotted #0000005c;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialsIcon {
+    width: 65px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.footerSocialsIcon img {
+    width: 100%;
+}
+
+.footerSocialsIcon:hover {
+    width: 70px;
+}
+
+/* FOOTER ANET ----------------*/
+.footerAnet {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footerAnetLogoWrap {
+    width: 250px;
+}
+
+/* PAGINAS EXTRA GENERALES ----------------------------------------- */
+
+.mainPages .mainWrapper {
+    width: 60%;
+    min-height: 61vh;
+    margin: 50px auto;
+    background-color: white;
+}
+
+.mainWrapper h1,
+.mainWrapper h3 {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mainWrapper h1 {
+    font-size: 6rem;
+    padding: 25px 0 0;
+    color: #4d0041c5;
+}
+
+.mainWrapper h3 {
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 25px;
+    border-bottom: 1px dotted #4d0171a0;
+}
+
+.mainWrapper h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #4d0042;
+    line-height: 90%;
+}
+
+.mainWrapper h5 {
+    font-size: 1.2rem;
+    color: #887c8e;
+    padding-bottom: 10px;
+}
+
+.mainWrapper p {
+    padding-bottom: 10px;
+}
+
+.mainWrapper .masInfo a{
+    color: #8001a7;
+    text-transform: uppercase;
+}
+
+.mainWrapper .masInfo a:hover {
+    text-decoration: underline wavy;
+}
+
+.mainWrapper section {
+    width: 80%;
+    margin: 30px auto;
+    padding: 25px;
+}
+
+/* PAGINAS: RAZAS ------------------------------------ */
+
+.razas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.razas .col_1 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.razas .col_2 {
+    width: 70%;
+}
+
+.razasSylvari .col_1,
+.razasNorn .col_1 {
+    order: 2;
+}
+
+.razasSylvari .col_2,
+.razasNorn .col_2 {
+    order: 1;
+    text-align: right;
+}
+
+.razasCharr .col_1 {
+    overflow: hidden;
+    justify-content: end;
 }

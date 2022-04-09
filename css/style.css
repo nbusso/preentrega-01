@@ -266,33 +266,38 @@ header {
 }
 
 /* ------------------------------------------------------------- */
-
+/* COMO JUGAR -------------------------------------------------- */
 .mainContent {
     width: 100%;
     min-height: 50vh;
     margin: 0 auto;
     display: flex;
+    flex-flow: column;
     padding: 30px 15%;
     background-color: whitesmoke;
 }
 
 .mainContent article {
-    width: 50%;
+    width: 100%;
     padding: 20px;
+    text-align: center;
 }
 
 .mainContent aside {
-    width: 50%;
+    width: 100%;
 }
 
 .mainContent h1 {
     font-size: 60px;
     padding: 10px 0 5px;
+    letter-spacing: 3px;
 }
 
 .mainContent h2 {
     font-size: 30px;
     padding: 0 0 10px 0;
+    color:#6c6c6c;
+    font-weight: normal;
 }
 
 .mainContent p {
@@ -300,38 +305,50 @@ header {
     text-indent: 10px;
 }
 
-/* SHOWROOM MAINMUNDO--------------------------------------- */
-
 .showroom {
     width: 100%;
+    padding: 30px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .imgContainer {
     font-size: 0;
-    width: 45%;
+    width: 20%;
     height: 20vh;
     min-width: 200px;
     min-height: 150px;
     padding-bottom: -5px;
-    border-radius: 10px;
-    border: 1px solid #4d0042;
-    background-size: cover;
-}
-
-.imgContainer img {
-    width: 100%;
-}
-
-.imgContainer:hover {
     background-color: #9c018746;
     background-blend-mode: multiply;
+    border: 1px solid #4d0042;
+    background-size: cover;
+    box-shadow: 2px 2px 5px #343333;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
+.imgContainer h3,
+.imgContainer h3 a {
+    font-size: 1.5rem;
+    color:whitesmoke;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+
+.imgContainer:hover {
+    background-blend-mode: normal;
+}
+
+.imgContainer:hover h3 {
+    text-decoration: underline dotted;
+}
 
 .img1 {
     background-image: url('../img/a-norn-necro.jpg');

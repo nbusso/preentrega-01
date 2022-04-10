@@ -652,3 +652,67 @@ footer {
 .prof .col_1 img {
     width: 100%;
 }
+
+/* PAGINAS: NOVEDADES ------------------------------------ */
+
+.mainPages .mainWrapper .novedadesWrapper {
+    width: 50%;
+    min-height: 30vh;
+}
+
+.novedades {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+}
+
+.novedades:hover {
+    background-color: #34333317;
+}
+
+.novedades .novedadesFecha {
+    width: 10%;
+    min-width: 50px;
+    text-align: center;
+    border-right: 1px dotted #380052 ;
+}
+
+
+.novedades .novedadesNoticia {
+    width: 90%;
+    min-width: 300px;
+    padding-left: 10px;
+}
+
+/* PAGINAS: LINKS UTILES ------------------------------------ */
+
+.mainLinks {  
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    /* justify-content: center; */
+}
+
+.cardLinks {
+    border: 1px solid lightgray;
+    padding: 15px;
+    width: 30%;
+    min-width: 250px;
+}
+
+.cardLinks:hover {
+    background-color: #34333311;
+}
+
+.cardLinks ul {
+    padding: 10px 0 0 20px;
+}
+
+.cardLinks ul li {
+    line-height: 150%;
+}
+
+.cardLinks ul li a:hover {
+    text-decoration: underline dotted;
+    color:#970681;
+}
